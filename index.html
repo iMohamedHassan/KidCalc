@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KidCalc</title>
+    <link rel="stylesheet" href="assests/style.css" />
+    <link rel="stylesheet" id="themeStylesheet" href="assets/theme1.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Fun Math</h1>
+    </header>
+
+    <section id="login">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required />
+
+        <label for="theme">Choose a Theme:</label>
+        <select id="theme" name="theme" onchange="switchTheme(this.value)">
+          <option value="theme1">Blue</option>
+          <option value="theme2">Green</option>
+          <option value="theme3">Red</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="kidcalc">
+      <h2>Let's Calculate!</h2>
+      <div id="calc-buttons">
+        <div class="numbers">
+          <button>0</button>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+        </div>
+        <div class="operators">
+          <button>+</button>
+          <button>-</button>
+          <button>></button>
+          <button><</button>
+          <button>=</button>
+        </div>
+      </div>
+      <div id="expression-box">Expression:</div>
+      <input type="text" id="answer" placeholder="Enter answer here" />
+      <button>Submit</button>
+      <button>Clear</button>
+      <div id="result-box">Results will be shown here</div>
+    </section>
+
+    <section id="info-bar">
+      <h2>Welcome, Kid!</h2>
+      <p>Correct Answers: 5</p>
+    </section>
+
+    <script src="assests/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+@import 'theme1.css';
+@import 'theme2.css';
+@import 'theme3.css';
+
+body {
+  background-image: url("../images/Green.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #654321;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #228b22;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+}
+
+button {
+  background-color: #a52a2a;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #8b0000;
+}
+
+#kidcalc {
+  width: 350px;
+  margin: 20px auto;
+  background: rgba(34, 139, 34, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#display-box {
+  grid-column: span 4;
+  background: white;
+  font-size: 24px;
+  padding: 15px;
+  text-align: right;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  min-height: 40px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.operators {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.numbers button,
+.operators button {
+  background-color: #8b4513;
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  border-radius: 8px;
+}
+
+#expression-box,
+#answer {
+  color: #000;
+  grid-column: span 4;
+  font-size: 22px;
+  padding: 12px;
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+#submit-answer,
+#clear-calc {
+  grid-column: span 2;
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+#result-message {
+  grid-column: span 4;
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 10px;
+}

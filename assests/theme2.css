@@ -1,0 +1,33 @@
+body {
+  background-image: url('images/Green.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  background-image: url('images/green2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  background-color: #228b22;
+}
+
+button {
+  background-color: #a52a2a;
+  color: white;
+  border: none;
+}
+
+.numbers button,
+.operators button {
+  background-color: #8b4513;
+}
+
+section {
+  background: rgba(34, 139, 34, 0.8);
+  color: white;
+}
